@@ -1,0 +1,51 @@
+body {
+    background-color: hsl(210, 50%, 90%); /* Azul suave */
+    color: hsl(0, 0%, 20%); /* Texto escuro */
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Preencher a altura total da tela */
+    margin: 0;
+    padding: 20px; /* Espaçamento ao redor do conteúdo */
+}
+
+button {
+    background-color: hsl(340, 100%, 50%); /* Vermelho vibrante */
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1em; /* Tamanho da fonte */
+    cursor: pointer; /* Mudança do cursor ao passar o mouse */
+    transition: background-color 0.3s, transform 0.2s; /* Efeito suave ao passar o mouse */
+}
+
+button:hover {
+    background-color: hsl(340, 100%, 60%); /* Cor mais clara ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o tamanho do botão */
+}
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+main {
+    text-align: center;
+    max-width: 800px; /* Limitar a largura máxima */
+    background-color: white; /* Fundo branco para maior contraste */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    padding: 20px; /* Espaçamento interno */
+}
+
+img {
+    max-width: 100%; /* Garantir que a imagem não ultrapasse a largura do contêiner */
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Sombra nas imagens */
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Em Busca do Mestre Pokémon</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/pokemon-begin.png" alt="Começo da aventura Pokémon">
+            <p>Em uma manhã ensolarada, você recebe seu primeiro Pokémon, um <strong>Flamekin</strong>, um Pokémon de fogo, do Professor Carvalho. Com ele, você decide se tornar um mestre Pokémon!</p>
+            <button class="btn-proximo" data-proximo="1">Começar no bosque</button>
+            <button class="btn-proximo" data-proximo="2">Explorar a cidade</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="img/bosque.png" alt="Bosque cheio de Pokémon">
+            <p>No bosque, você encontra um Pokémon selvagem! É um <strong>Leafy</strong>, um Pokémon de grama. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="3">Tentar capturá-lo</button>
+            <button class="btn-proximo" data-proximo="4">Fugir e voltar para casa</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="img/cidade.png" alt="Cidade tranquila e acolhedora">
+            <p>Explorando a cidade, você ouve rumores sobre um Pokémon lendário, o <strong>Thunderrex</strong>, que vive nas montanhas. Você decide?</p>
+            <button class="btn-proximo" data-proximo="5">Partir para as montanhas</button>
+            <button class="btn-proximo" data-proximo="6">Visitar a loja de itens</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="img/pokemon-capturado.png" alt="Capturando um Pokémon">
+            <p>Você conseguiu capturar o <strong>Leafy</strong>! Ele se junta à sua equipe e agora você pode continuar sua jornada.</p>
+            <button class="btn-proximo" data-proximo="7">Explorar mais o bosque</button>
+            <button class="btn-proximo" data-proximo="8">Voltar para a cidade</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/pokemon-gone.png" alt="Fugindo do Pokémon selvagem">
+            <p>Você decide voltar para casa, mas a aventura de ser um mestre Pokémon ainda o chama!</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar a jornada</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <img src="img/montanha.png" alt="Montanha onde vive o Pokémon lendário">
+            <p>Na montanha, você encontra o Pokémon lendário, o <strong>Thunderrex</strong>! Ele é muito forte, mas você tem uma chance de capturá-lo.</p>
+            <button class="btn-proximo" data-proximo="9">Tentar capturá-lo</button>
+            <button class="btn-proximo" data-proximo="10">Fugir e explorar a caverna</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <img src="img/loja.png" alt="Loja de itens Pokémon">
+            <p>Na loja, você compra algumas poções e uma Pokébola. Isso pode ser útil em sua jornada!</p>
+            <button class="btn-proximo" data-proximo="2">Voltar a explorar a cidade</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <img src="img/bosque-exploracao.png" alt="Explorando o bosque">
+            <p>Você continua sua jornada pelo bosque e encontra mais Pokémon, incluindo um <strong>Stoneclaw</strong>, um poderoso Pokémon de rocha. Eles estão te desafiando!</p>
+            <button class="btn-proximo" data-proximo="11">Lutar contra eles</button>
+            <button class="btn-proximo" data-proximo="12">Capturá-los</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <img src="img/cidade-voltando.png" alt="Voltando à cidade">
+            <p>De volta à cidade, você se prepara para novas aventuras e desafios!</p>
+            <button class="btn-proximo" data-proximo="0">Começar de novo</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <img src="img/pokemon-lendario.png" alt="Capturando o Pokémon lendário">
+            <p>Você capturou o <strong>Thunderrex</strong>! Agora você é um dos poucos mestres Pokémon!</p>
+            <button class="btn-proximo" data-proximo="13">Continuar a jornada</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <img src="img/caverna.png" alt="Caverna misteriosa">
+            <p>Você foge para a caverna e encontra mais Pokémon selvagens, incluindo um <strong>Stoneclaw</strong>, um poderoso Pokémon de rocha! Está pronto para capturá-los?</p>
+            <button class="btn-proximo" data-proximo="12">Capturá-los</button>
+            <button class="btn-proximo" data-proximo="11">Lutar contra eles</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <img src="img/luta.png" alt="Lutando contra Pokémon">
+            <p>Você derrota os Pokémon no bosque e ganha experiência, fortalecendo sua equipe!</p>
+            <button class="btn-proximo" data-proximo="7">Explorar mais o bosque</button>
+            <button class="btn-proximo" data-proximo="0">Começar de novo</button>
+        </div>
+        <div class="passo" id="passo-12">
+            <img src="img/captura.png" alt="Capturando um novo Pokémon">
+            <p>Você captura mais Pokémon, incluindo o <strong>Stoneclaw</strong>, e enriquece sua equipe. Sua jornada como mestre Pokémon continua!</p>
+            <button class="btn-proximo" data-proximo="0">Começar de novo</button>
+        </div>
+        <div class="passo" id="passo-13">
+            <img src="img/pokemon-equipe.png" alt="Equipe de Pokémon do jogador">
+            <p>Com uma equipe forte, você decide participar de torneios e se tornar o maior mestre Pokémon de todos!</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar a aventura</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
